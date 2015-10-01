@@ -1,0 +1,30 @@
+﻿Problemas previstos:
+
+- Caso o sistema não consiga abrir uma conexão com o banco de dados ele será fechado.
+
+- O sistema está configurado para rodar no JAVA 8
+
+- O sistema necessita de acesso a internet para consultar webservice de CEP.
+
+- Para consultar algum cadastro nas telas de consulta basta informar a descrição ou informar um espaço 
+que o sistema está dando um replace na descrição substituindo os espaços por '%'
+
+- Na tela de cadastrar venda ao pressionar as teclas para consultar um 
+cliente ou um usuário ele vai abrir um dialog de consulta e deverá ser selecionado um 
+item da tabela para que ele capture o codigo do item selecionado e ao fechar 
+a consulta o codigo é adicionado na tela de cadastro.
+
+- Na verdade não é um erro mas como não sei criar um table model próprio 
+para a jtable tive esse problema na visualizacao quando vai adicionar item na venda 
+caso o usuario altere os dados da jtable ele pega os valores alterados mas não faz 
+cálculos inserindo esse valor errado no banco mas o cálculo é feito antes.
+
+- A entrada de produto no estoque pode ser feita no ato do cadastro como na tela de entrada de produto.
+
+- Os cadastros costumam ter um campo status que será utilizado um regra de negócio para controlar
+a manipulacao de dados com status inativo somente se algum dia for preciso mas no momento está 
+funcionando apenas para vendas em aberto e finalizada.
+
+- Ao informar o CPF ou CNPJ na tentativa de cadastro ou atualização eles serão validados.
+
+- O backup que o sistema gera fica na pasta c:\sorveteria\backups\backup
